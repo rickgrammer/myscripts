@@ -3,8 +3,8 @@ import os
 
 try:
     os.chdir(os.sys.argv[1])
-except IndexError:
-    print('enter a path to look for an activate file')
+except:
+    print('enter a path to look for an "activate-file".')
     exit()
 
 def get_files(list_of_dirs, prev=False):
