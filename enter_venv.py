@@ -1,4 +1,10 @@
 #! /usr/local/bin/python3.6
+''' 
+Written by: Ashfaq Rahman
+This is a simple script that lets you enter into venv by pressing "enter <path/folder containing activate file>.
+It looks for activate file in current directory, previous directory, and explores the folders upto depth of 1
+for "activate" file. 
+'''
 import os
 
 try:
