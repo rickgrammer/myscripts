@@ -10,8 +10,7 @@ import os
 try:
     os.chdir(os.sys.argv[1])
 except:
-    print('enter a path to look for an "activate-file".')
-    exit()
+    os.chdir('.')
 
 def get_files(list_of_dirs, prev=False):
     if prev:
