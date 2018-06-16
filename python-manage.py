@@ -9,6 +9,7 @@ shortcuts={'r': 'runserver',
         'mk': 'makemigrations',
         'm': 'migrate',
         'c': 'check',
+        'sa': 'startapp',
         }
 
 os.system('python manage.py '+ shortcuts[os.sys.argv[1]])
