@@ -12,4 +12,4 @@ shortcuts={'r': 'runserver',
         'sa': 'startapp',
         }
 
-os.system('python manage.py '+ shortcuts[os.sys.argv[1]])
+os.system('python manage.py '+ shortcuts[os.sys.argv[1]] + ' ' + ' '.join(x for x in os.sys.argv[2:]))
