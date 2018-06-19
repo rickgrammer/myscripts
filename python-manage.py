@@ -8,7 +8,7 @@ shortcuts={'r': 'runserver',
         'c': 'check',
         'mk': 'makemigrations',
         'm': 'migrate',
-        'c': 'check',
+        'cs': 'collectstatic',
         'sa': 'startapp',
         }
 
