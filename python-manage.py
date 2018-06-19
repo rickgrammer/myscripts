@@ -12,4 +12,7 @@ shortcuts={'r': 'runserver',
         'sa': 'startapp',
         }
 
-os.system('python manage.py '+ shortcuts[os.sys.argv[1]] + ' ' + ' '.join(x for x in os.sys.argv[2:]))
+try:
+    os.system('python manage.py '+ shortcuts[os.sys.argv[1]] + ' ' + ' '.join(x for x in os.sys.argv[2:]))
+except:
+    os.system('python manage.py '+ ' ' + ' '.join(x for x in os.sys.argv[1:]))
