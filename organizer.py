@@ -7,6 +7,10 @@ for folder in folders:
 		os.chdir(folder)
 		for f in os.listdir():
 			if f.endswith('.vtt'): os.remove(f)
+			if f.endswith('.srt'):
+				if not os.path.isdir('srts'):
+					os.mkdir('srts')
+				os.rename(f,'./srts/'+f)
 			if f.endswith('.zip'):
 				if not os.path.isdir('files'):
 					os.mkdir('files')
